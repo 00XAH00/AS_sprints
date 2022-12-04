@@ -21,7 +21,7 @@ def find_zero_lr(array: list, item_position: int, left: bool) -> str:
                 return str(distance)
             distance += 1
 
-    return -1
+    return "-1"
 
 
 def nearest_zero(array_lenght: int, array: str) -> str:
@@ -38,9 +38,9 @@ def nearest_zero(array_lenght: int, array: str) -> str:
         left_distance = find_zero_lr(array, house_number, True)
         right_distance = find_zero_lr(array, house_number, False)
 
-        if left_distance == -1:
+        if left_distance == "-1":
             result_array.append(right_distance)
-        elif right_distance == -1:
+        elif right_distance == "-1":
             result_array.append(left_distance)
         elif left_distance < right_distance:
             result_array.append(left_distance)
