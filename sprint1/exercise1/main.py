@@ -1,4 +1,4 @@
-def find_zero_lr(array: list, item_position: int, left: bool) -> [str, None]:
+def find_zero_lr(array: list, item_position: int, left: bool) -> str:
     """
     Функция поиска растояния от заданного элемента до ближайшего элемента равного нулю\n
     Если параметр left = True тогда функция ищет растояние до ближайшего элемента слева, иначе ищет справа\n
@@ -21,7 +21,7 @@ def find_zero_lr(array: list, item_position: int, left: bool) -> [str, None]:
                 return str(distance)
             distance += 1
 
-    return None
+    return -1
 
 
 def nearest_zero(array_lenght: int, array: str) -> str:
@@ -34,14 +34,13 @@ def nearest_zero(array_lenght: int, array: str) -> str:
     result_array = []
     array = array.split(" ")
 
-    # for house in array:
     for house_number in range(array_lenght):
         left_distance = find_zero_lr(array, house_number, True)
         right_distance = find_zero_lr(array, house_number, False)
 
-        if left_distance is None:
+        if left_distance == -1:
             result_array.append(right_distance)
-        elif right_distance is None:
+        elif right_distance == -1:
             result_array.append(left_distance)
         elif left_distance < right_distance:
             result_array.append(left_distance)
