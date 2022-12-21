@@ -3,3 +3,7 @@
 - [Первый спринт](https://github.com/00XAH00/AS_sprints/blob/main/sprint1)
   - [Ближайший ноль](https://github.com/00XAH00/AS_sprints/blob/main/sprint1/exercise1/main.py)
   - [Ловкость рук](https://github.com/00XAH00/AS_sprints/blob/main/sprint1/exercise2/main.py)
+
+- [Второй спринт](https://github.com/00XAH00/AS_sprints/blob/main/sprint2)
+  - [Правильные скобочные последовательности](https://github.com/00XAH00/AS_sprints/blob/main/sprint2/exercise1/main.py)
+  - [Составить самое большое число](https://github.com/00XAH00/AS_sprints/blob/main/sprint2/exercise2/main.py)
